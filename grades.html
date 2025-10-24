@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Grades — School Registrar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header small">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo-mark">
+          <img src="logo.png" alt="Registrar Logo">
+        </div>
+        <div class="brand-text">
+          <div class="brand-title">School Registrar</div>
+          <div class="brand-sub">Student Portal</div>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="registration.html" class="nav-link">Registration</a>
+        <a href="schedule.html" class="nav-link">Schedules & Balance</a>
+        <a href="grades.html" class="nav-link active">Grades</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page container">
+      <h2 class="page-title">Grades</h2>
+
+      <div class="filters">
+        <label style="width:50%;">
+          <span>Select Year Level</span>
+          <select>
+            <option>1st Year</option>
+            <option>2nd Year</option>
+            <option>3rd Year</option>
+            <option>4th Year</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="card table-card">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Subject</th>
+              <th>Grade</th>
+              <th>Credits</th>
+              <th>Remarks</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Programming 1</td><td>85</td><td>3</td><td>Pass</td></tr>
+            <tr><td>Calculus</td><td>78</td><td>3</td><td>Pass</td></tr>
+            <tr><td>Databases</td><td>52</td><td>3</td><td>Fail</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="card balance-summary-compact">
+        <h4>Balance Summary</h4>
+        <p class="muted">(no outstanding balance)</p>
+      </div>
+
+      <div class="form-actions">
+        <a class="btn ghost" href="schedule.html">Back</a>
+        <a class="btn primary" href="index.html">Home</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year4"></span> School Registrar System</small>
+    </div>
+  </footer>
+
+  <script src="storage.js"></script>
+<script src="ui.js"></script>
+<script src="register.js"></script>
+<script src="sched.js"></script>
+<script src="grades.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>

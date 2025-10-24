@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Registration — School Registrar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="logo.png">
+</head>
+
+<body>
+  <header class="site-header small">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo-mark">
+          <img src="logo.png" alt="Registrar Logo">
+        </div>
+        <div class="brand-text">
+          <div class="brand-title">School Registrar</div>
+          <div class="brand-sub">Student Portal</div>
+        </div>
+      </div>
+
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="registration.html" class="nav-link active">Registration</a>
+        <a href="schedule.html" class="nav-link">Schedules & Balance</a>
+        <a href="grades.html" class="nav-link">Grades</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page container">
+      <h2 class="page-title">Registration</h2>
+
+      <form class="form-grid" action="#" method="post" onsubmit="return false;">
+        <div class="form-row">
+          <label for="fname">First Name</label>
+          <input id="fname" name="fname" type="text" placeholder="YOUR NAME">
+        </div>
+
+        <div class="form-row">
+          <label for="lname">Last Name</label>
+          <input id="lname" name="lname" type="text" placeholder="Dela Cruz">
+        </div>
+
+        <div class="form-row">
+          <label for="year">Year Level</label>
+          <select id="year" name="year">
+            <option>1st Year</option>
+            <option>2nd Year</option>
+            <option>3rd Year</option>
+            <option>4th Year</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label for="course">Course</label>
+          <select id="course" name="course">
+            <option>BSIT</option>
+            <option>BSHM</option>
+            <option>BSOA</option>
+            <option>BSBA</option>
+            <option>BSCRIM</option>
+            <option>BEED</option>
+            <option>BSCE</option>
+            <option>BSTM</option>
+            <option>BSENTREP</option>
+            <option>BSAIS</option>
+            <option>BSP</option>
+            <option>BLIS</option>
+          </select>
+        </div>
+
+        <div class="form-row wide">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="juan@example.com">
+        </div>
+
+        <div class="form-actions">
+          <a class="btn ghost" href="index.html">Back</a>
+         <a class="btn primary" href="schedule.html">Next →</a>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> School Registrar System</small>
+    </div>
+  </footer>
+
+ <script src="storage.js"></script>
+<script src="ui.js"></script>
+<script src="register.js"></script>
+<script src="sched.js"></script>
+<script src="grades.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>

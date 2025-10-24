@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>School Registrar System — Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="logo.png">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo-mark">
+          <img src="logo.png" alt="Registrar Logo">
+        </div>
+        <div class="brand-text">
+          <div class="brand-title">School Registrar</div>
+          <div class="brand-sub">Student Portal</div>
+        </div>
+      </div>
+
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="registration.html" class="nav-link">Registration</a>
+        <a href="schedule.html" class="nav-link">Schedules & Balance</a>
+        <a href="grades.html" class="nav-link">Grades</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <h1 class="hero-title">School Registrar System</h1>
+          <p class="hero-sub">Quick access to your academic records and balance.</p>
+          <div class="cards row">
+            <a class="card1" href="registration.html">
+              <div class="card1-icon">✔️</div>
+              <h3 class="card1-title">Registration</h3>
+              <p class="card1-text">Register for classes and manage your personal information.</p>
+            </a>
+
+            <a class="card1" href="schedule.html">
+              <div class="card1-icon">📅</div>
+              <h3 class="card1-title">Schedules & Balance</h3>
+              <p class="card1-text">Check your class schedule and view account balances.</p>
+            </a>
+
+            <a class="card1" href="grades.html">
+              <div class="card1-icon">📊</div>
+              <h3 class="card1-title">Grades</h3>
+              <p class="card1-text">View your grades and academic performance.</p>
+            </a>
+          </div>
+
+          <div class="hero-cta">
+            <a class="btn primary" href="registration.html">Next →</a>
+          </div>
+        </div>
+
+        
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> School Registrar System</small>
+    </div>
+  </footer>
+<script src="storage.js"></script>
+<script src="ui.js"></script>
+<script src="register.js"></script>
+<script src="sched.js"></script>
+<script src="grades.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>

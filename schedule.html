@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Schedules & Balance — School Registrar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="logo.png">
+</head>
+
+<body>
+  <header class="site-header small">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo-mark">
+          <img src="logo.png" alt="Registrar Logo">
+        </div>
+        <div class="brand-text">
+          <div class="brand-title">School Registrar</div>
+          <div class="brand-sub">Student Portal</div>
+        </div>
+      </div>
+
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="registration.html" class="nav-link">Registration</a>
+        <a href="schedule.html" class="nav-link active">Schedules & Balance</a>
+        <a href="grades.html" class="nav-link">Grades</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page container">
+      <h2 class="page-title">Schedules & Balance</h2>
+
+      <div class="filters">
+        <label>
+          <span>Select Year Level</span>
+          <select>
+           <option>1st Year</option>
+            <option>2nd Year</option>
+            <option>3rd Year</option>
+            <option>4th Year</option>
+          </select>
+        </label>
+
+        <label>
+          <span>Select Course</span>
+          <select>
+            <option>BSIT</option>
+            <option>BSHM</option>
+            <option>BSOA</option>
+            <option>BSBA</option>
+            <option>BSCRIM</option>
+            <option>BEED</option>
+            <option>BSCE</option>
+            <option>BSTM</option>
+            <option>BSENTREP</option>
+            <option>BSAIS</option>
+            <option>BSP</option>
+            <option>BLIS</option>
+          </select>
+        </label>
+
+        <label>
+          <span>Section</span>
+          <select>
+            <option>21001</option>
+            <option>21002</option>
+            <option>21003</option>
+            <option>21004</option>
+            <option>21005</option>
+            <option>21006</option>
+            <option>21007</option>
+            <option>21008</option>
+            <option>21009</option>
+            <option>21010</option>
+            <option>21011</option>
+            <option>21012</option>
+            <option>21013</option>
+            <option>21014</option>
+            <option>21015</option>
+            <option>21016</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="card table-card">
+        <h3 class="card-head">Class Schedule</h3>
+
+        <div class="table-container">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Time</th>
+                <th>Subject</th>
+                <th>Room</th>
+                <th>Instructor</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>8:00–9:00</td><td>Programming 1</td><td>301</td><td>Mr. Santos</td></tr>
+              <tr><td>9:00–10:00</td><td>Calculus</td><td>205</td><td>Ms. Reyes</td></tr>
+              <tr><td>10:00–11:00</td><td>Databases</td><td>402</td><td>Mr. Cruz</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="balance-summary">
+          <h4>Balance Summary</h4>
+          <dl>
+            <div class="dl-row"><dt>Tuition Fee</dt><dd>₱ 25,000</dd></div>
+            <div class="dl-row"><dt>Miscellaneous</dt><dd>₱ 5,000</dd></div>
+            <div class="dl-row total"><dt>Total Balance</dt><dd>₱ 30,000</dd></div>
+          </dl>
+        </div>
+      </div>
+
+      <div class="form-actions">
+        <a class="btn ghost" href="registration.html">Back</a>
+        <a class="btn primary" href="grades.html">Next →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> School Registrar System</small>
+    </div>
+  </footer>
+
+ <script src="storage.js"></script>
+<script src="ui.js"></script>
+<script src="register.js"></script>
+<script src="sched.js"></script>
+<script src="grades.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>
