@@ -6,6 +6,7 @@
   <title>Grades — School Registrar</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="logo.png">
 </head>
 <body>
   <header class="site-header small">
@@ -19,6 +20,7 @@
           <div class="brand-sub">Student Portal</div>
         </div>
       </div>
+      <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
       <nav class="main-nav">
         <a href="index.html" class="nav-link">Home</a>
         <a href="registration.html" class="nav-link">Registration</a>
@@ -44,23 +46,38 @@
         </label>
       </div>
 
-      <div class="card table-card">
-        <table class="data-table">
-          <thead>
-            <tr>
-              <th>Subject</th>
-              <th>Grade</th>
-              <th>Credits</th>
-              <th>Remarks</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td>Programming 1</td><td>85</td><td>3</td><td>Pass</td></tr>
-            <tr><td>Calculus</td><td>78</td><td>3</td><td>Pass</td></tr>
-            <tr><td>Databases</td><td>52</td><td>3</td><td>Fail</td></tr>
-          </tbody>
-        </table>
-      </div>
+     <div class="card table-card">
+  <table class="data-table">
+    <thead>
+      <tr>
+        <th>Subject</th>
+        <th>Grade</th>
+        <th>Credits</th>
+        <th>Remarks</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td data-label="Subject">Programming 1</td>
+        <td data-label="Grade">85</td>
+        <td data-label="Credits">3</td>
+        <td data-label="Remarks">Pass</td>
+      </tr>
+      <tr>
+        <td data-label="Subject">Calculus</td>
+        <td data-label="Grade">78</td>
+        <td data-label="Credits">3</td>
+        <td data-label="Remarks">Pass</td>
+      </tr>
+      <tr>
+        <td data-label="Subject">Databases</td>
+        <td data-label="Grade">52</td>
+        <td data-label="Credits">3</td>
+        <td data-label="Remarks">Fail</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
       <div class="card balance-summary-compact">
         <h4>Balance Summary</h4>
@@ -79,7 +96,7 @@
       <small>© <span id="year4"></span> School Registrar System</small>
     </div>
   </footer>
-
+<script src="menu.js"></script>
   <script src="storage.js"></script>
 <script src="ui.js"></script>
 <script src="register.js"></script>
